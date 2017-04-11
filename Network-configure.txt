@@ -1,0 +1,18 @@
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth0
+iface eth0 inet static
+        address 103.4.144.131
+        netmask 255.255.255.240
+        network 103.4.144.128
+        broadcast 103.4.144.143
+        gateway 103.4.144.129
+        # dns-* options are implemented by the resolvconf package, if installed
+        dns-nameservers 8.8.8.8
+        dns-search 4.144.131-nextonline.com.bd
+auto eth1
+iface eth1 inet static
+        address 10.200.10.1
+        netmask 255.255.255.0

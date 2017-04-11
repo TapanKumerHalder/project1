@@ -1,0 +1,29 @@
+#  The default values are for a nova controller node with 2 NICs. 
+#  The host internal network is 10.0.0.x on eth0. 
+#  The internet connected IP for this host is 10.200.1.24 on eth1.
+#  The VMs will be on 10.0.0.x network like that on eth0. 
+
+export IP=10.10.10.3                        # Controller's private IP 
+export IP1=10.10.10.4					    # swift ip
+export CONTROLLER_PUBLIC_IP=10.200.10.1   # Controller's public IP
+export PUBLIC_IP_RANGE=10.200.10.226/25		# Floating IP range
+#
+# VM Network Configuration
+export VMNET_IP_RANGE=10.10.10.4/24
+export VMNET_NET_SIZE=256
+#export VMNET_IP_START=10.0.0.25
+#
+# NIC configuration for the controller node
+export PUBLIC_NIC=eth0				# The public NIC, floating network, allow instance connect to Internet
+export PRIVATE_NIC=eth1				# The private NIC, fixed network. 
+#
+export MYSQL_PASS=root				# Default password of mysql-server
+export CLOUD_ADMIN=admin			# Cloud admin of Openstack
+export CLOUD_ADMIN_PASS=password		# Password will use to login into Dashboard later
+export TENANT=OpenstackAdmin		# The name of tenant (project)
+export SERVICE_TENANT=service			# Service tenant
+export REGION=RegionOne				# You must specific it. Imagine that you have multi datacenter. Not important, just keep it by default
+export HYPERVISOR=qemu					# if your machine support KVM (check by run $ kvm-ok), change QEMU to KVM
+
+################################################
+

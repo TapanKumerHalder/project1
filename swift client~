@@ -1,0 +1,4 @@
+swift client
+==============
+$ sudo apt-get install python-swiftclient
+$ swift -A http://10.0.3.134:8080/auth/v1.0 -U testproj:testuser -K testpwd stat

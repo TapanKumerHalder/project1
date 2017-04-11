@@ -1,0 +1,12 @@
+
+1. Please read the install_script.sh
+    Assumptions : 
+             a. Defualt user:password is swift:swift
+             b. You already have ubuntu cloud archive folsom repo in place before running the script, if not read the script it tells you how to enable it.
+  
+2. Source the admin credentials before executing swift commands after installing swift admin_source file has the details 
+                 # source admin_source
+
+
+
+Good luck!! (@koolhead17) 
